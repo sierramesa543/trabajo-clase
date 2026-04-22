@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Montoc - Tienda</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Montoc</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="carrito-icono">
+        🛒 <span id="contador">0</span>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Muñequitos con estilo </h2>
+    <p>Compra fácil, rápido y seguro</p>
+</section>
+
+<section class="productos">
+
+    <div class="card">
+        <img src="static/imagen/image.png" alt="img">
+        <h3>Muñeco Clásico</h3>
+        <p>$50.000</p>
+        <button onclick="agregarCarrito('Muñeco Clásico',50000)">
+            Agregar al carrito
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="static/imagen/image.png" alt="img">
+        <h3>Edición Premium</h3>
+        <p>$70.000</p>
+        <button onclick="agregarCarrito('Edición Premium',70000)">
+            Agregar al carrito
+        </button>
+    </div>
+
+</section>
+
+<!-- CARRITO -->
+<section class="carrito">
+    <h2>🛒 Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+</section>
+
+<script src="static/js/app.js"></script>
+</body>
+</html>
